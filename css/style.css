@@ -244,6 +244,39 @@ footer li {
 }
 
 /*Responsive*/
+@media only screen and (max-width: 900px) {
+  .skillCard1, .skillCard2, .skillCard3 {
+    width: 100%; 
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .skillsContainer {
+    flex-direction: column;
+    align-items: center; 
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .skillsColumn {
+    width: 100%; 
+    margin: 10px;
+  }
+
+  .container2, .rowWork2, .columnWork2, .work {
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto; 
+    align-items: center;
+  }
+
+  .columnWork2 {
+    padding:10px;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .container2, .rowWork2, .columnWork2, .work {
     width: 100%;
