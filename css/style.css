@@ -39,7 +39,7 @@ nav {
   padding-left: 0px;
 }
 
-li:hover {
+nav li:hover {
   color: #f99f1e;
   cursor: pointer;
 }
@@ -50,8 +50,6 @@ li:hover {
     cursor:pointer;
 }
 
-
-
 /*Paragraph Styling*/
 p {
     color: white;
@@ -59,16 +57,11 @@ p {
     line-height: 28px;
     letter-spacing: 1px;
   }
-/*footer ul DEFUNCT{
-  width: 70%;
-  margin-left: auto;
-  display: inline-block;
-  vertical-align: bottom;
-}*/
 
 /*padding for landing section*/
 .landing {
     padding-top: 100px;
+    padding-bottom:80px;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -76,16 +69,10 @@ p {
 
 /*Styling for Hero Section*/
 .heroImg {
-  height: 400px;
-  /*float: right;*/
-  /* justify-content:right;
-  text-align:right; */
-  
+  height: 400px; 
 }
 
 .heroText {
-  /* float: left; */
-  /* top: 50%; */
   width: 400px;
 }
 
@@ -101,26 +88,15 @@ p {
 .fiftyPercentLeft {
   flex:1;
   text-align:right;
+  
 }
 
 .fiftyPercentRight {
   flex:1;
   text-align:left;
+  
 }
 
-/*.column {
-    float: left;
-    width: 50%;
-}*/
-
-
-  
-/*.row {
-    content: "";
-  
-    clear: both;
-}*/
-  
 .content {
     width: 500px;
     margin: 0 auto;
@@ -153,42 +129,19 @@ button:hover {
 /*Section Title styling*/
 .sectionTitle {
     font-family: Helvetica, sans-serif;
-    font-size:20px;
+    font-size:30px;
     color: #f99f1e;
     font-weight: bold;
-    margin: 30px;
-    text-align:center;
-    
+    margin-top: 30px;
+    text-align:center;    
   }
-
-/* DEFUNCT
-.columnWork {
-  float: left;
-  display: flex;
-}
-
-.rowWork {
-  content: "";
-  display: table;
-  clear: both;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px;
-}
-
-.workPics {
-  width: 300px;
-  border-radius: 5px;
-  margin: 10px;
-}*/
 
 /*Styling for two column grid*/
 .container2 {
   /*max-width: 1200px;*/
   width:60%;
   margin: 0 auto;
-  padding: 20px;
-  text-align:center;
+  padding: 10px;
   clear:both;
 }
 
@@ -196,11 +149,14 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
 }
 
 .columnWork2 {
   width: 48%;
-  margin-bottom: 20px;
+  margin-right: 2%;
+  margin-bottom: 15px;
+
 }
 
 .work {
@@ -209,45 +165,65 @@ button:hover {
   border-radius: 5px;
 }
 
-/*footer DEFUNCT{
-    background-color: #5465ff;
-    color: white;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    max-height: 40px;
-    bottom: 0;
-    padding: 10px;
-    position: fixed;
-    left: 0;
-    width: 100%;
-    font-size: 12;
-  }*/
-
   .skillsContainer {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    color:white;
-    font-family:Helvetica;
-    width: 60%;
-    text-align:center;
-  }
-  
-  .skillsColumn {
-    width: 25%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .skillsColumn ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .skillsColumn li {
-    margin-bottom: 8px;
+    display:flex;
+    width:80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
 
+  .skillsColumn {
+    width:20%;
+    margin: 10px;
+  }
+
+  .skillCard1 {
+    background-color:#292929; 
+    color:white;
+    width:33%;
+    min-width:100px;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding:26px;
+    font-family:Helvetica;
+  }
+
+  .skillCard2 {
+    background-color:#292929; 
+    color:white;
+    width:33%;
+    min-width:100px;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding:26px;
+    font-family:Helvetica;
+  }
+
+  .skillCard3 {
+    background-color:#292929; 
+    color:white;
+    width:33%;
+    min-width:100px;
+    border-radius: 5px;
+    padding:26px;
+    font-family:Helvetica;
+  }
+  
+  .skillIcon {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+  }
+  
+  .skillImg {
+    margin:auto;
+    padding:20px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
 
 /*Styling for Footer*/
 footer {
@@ -267,4 +243,40 @@ footer li {
     padding-right: 20px;
 }
 
+/*Responsive*/
+@media only screen and (max-width: 600px) {
+  .container2, .rowWork2, .columnWork2, .work {
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto; 
+  }
 
+  .columnWork2 {
+    padding:10px;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .skillCard1, .skillCard2, .skillCard3 {
+    width: 100%; 
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .skillsContainer {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .skillsColumn {
+    width: 100%; 
+    margin: 10px;
+  }
+
+  .fiftyPercentLeft, .fiftyPercentRight {
+    flex-direction: column;
+    text-align: left; 
+    width: 100%; 
+    margin: 0 auto; 
+  }
+}
