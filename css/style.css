@@ -133,6 +133,8 @@ button:hover {
     color: #f99f1e;
     font-weight: bold;
     margin-top: 30px;
+    padding-left: 0px;
+    margin-left: 0px;
     text-align:center;    
   }
 
@@ -244,7 +246,7 @@ footer li {
 }
 
 /*Responsive*/
-@media only screen and (max-width: 900px) {
+/*@media only screen and (max-width: 900px) {
   .skillCard1, .skillCard2, .skillCard3 {
     width: 100%; 
     margin-right: 0;
@@ -312,4 +314,4 @@ footer li {
     width: 100%; 
     margin: 0 auto; 
   }
-}
+}*/
