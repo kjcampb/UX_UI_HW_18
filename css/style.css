@@ -246,7 +246,7 @@ footer li {
 }
 
 /*Responsive*/
-/*@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .skillCard1, .skillCard2, .skillCard3 {
     width: 100%; 
     margin-right: 0;
@@ -314,4 +314,4 @@ footer li {
     width: 100%; 
     margin: 0 auto; 
   }
-}*/
+}
